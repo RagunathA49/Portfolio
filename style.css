@@ -12,14 +12,13 @@ body{
 .nav-header{
     background-color: #000814;
     padding: 2vmin 2rem;
-    width: 100vw;
-    height: 15vh;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 nav{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +36,7 @@ nav{
     text-decoration: none;
 }
 a img{
-    width: 80px;
+    min-width: 57px;
     height: 50px ;
     align-items: center;
 }
@@ -70,12 +69,12 @@ a img{
 .banner-container{
     position:relative;
     width:auto;
-    height: 100vh;
+    min-height: 500px;
     /* background-color: red; */
 }
 .banner-text{
     letter-spacing: 6px;
-    line-height: 12vh;
+    line-height: 8vh;
 }
 .banner-text> h1{
     font-weight: 400;
@@ -97,19 +96,22 @@ a img{
     justify-content: space-between;
 }
 .btn1-container{
+    min-height: 30px;
+    min-width: 120px;
     color: #fffafa;
-    background-color: #008119;
-    border-radius: 5px;
-    padding: 2.5vh 1vw;
-    border: none;
+    background-color:  #008119;
+    padding: 0.8rem;
     text-align: center;
+    border-radius: 7px;
 }
 .btn2-container{
+    min-height: 30px;
+    min-width: 120px;
     color: #fffafa;
     border: 2px solid #008119;
-    border-radius: 5px;
-    padding: 2.5vh 1vw;
+    padding: 0.8rem;
     text-align: center;
+    border-radius: 7px;
 }
 .main-ban-con{
     /* background-color: red; */
@@ -174,7 +176,7 @@ a img{
     animation: heart-anim 2.1s ease-in infinite;
 }
 .image4{
-    bottom: -3vh;
+    bottom: 13vh;
     left: 0vw;
     animation: code-anim 2.4s ease-in infinite;
 }
@@ -245,8 +247,7 @@ a img{
     background-color: #2D2D2D;
     padding-top: 1rem;
     font-weight: 400;
-    width: 100vw;
-    height: 113vh;
+    height: 515px;
 }
 .about-container > .title{
     display: flex;
@@ -265,20 +266,19 @@ a img{
     color: #FF4081;
 }
 .title>img{
-    width: 3vw;
-    height: 9vh;
+    width: 46px;
+    height: 45px;
 }
 .flex-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 7rem;
-    margin-top: 18vh;
+    margin-top: 58px;
 }
 .flex-container>img{
-    margin-top: 0.5rem;
     width: 15vw;
-    height: 70vh;
+    height: 330px;
     border-radius: 10px;
 }
 
@@ -311,8 +311,8 @@ a img{
     line-height: 1.3rem;
 }
 .about-btn{
-    padding: 12px 24px;
-    width: 8vw;
+    padding: 14px 24px;
+    width: 130px;
     text-align: center;
     color: #fffafa;
     background-color: rgb(255, 64, 129);
@@ -322,12 +322,12 @@ a img{
 }
 
 #curved-arrow{
-    width: 6vw;
-    height: 25vh;
+    width: 100px;
+    height: 102px;
     rotate: 310deg;
     position: absolute;
     left: 50vw;
-    top: 12vh;
+    top: 44px;
 }
 .circle{
     position: absolute;
@@ -382,85 +382,100 @@ a img{
 .sk-title>h1{
     margin-top:0.5rem;
 }
-.skills-con{
+/* .skills-con{
+    background-color: red;
+} */
+.skills-con>.skills-line{
     position: absolute;
-    top:8rem;
+    top: 8rem;
+    left: 50vw;
+    width: 300px;
+    height: 300px;
+    background-color: red;
 }
-.skills-con>img{
+.skills-icons>.skills-line{
     width:300px;
     height: 300px;
 }
 .skills-icons>#i1{
     position: absolute;
-    bottom: 237px;
-    left: 464px ;
+    top: 232px;
+    left: 590px;
 }
 .skills-icons>#i2{
     position: absolute;
     top: 190px;
-    left: 469px;
+    left: 591px;
 }
 .skills-icons>#i3{
     position: absolute;
-    top: 190px;
-    left: 517px ;
+    top: 185px;
+    left: 640px;
 }
 .skills-icons>#i4{
     position: absolute;
-    top: 150px;
-    left: 513px;
+    top: 144px;
+    left: 637px;
 }
 .skills-icons>#i5{
     position: absolute;
     top: 158px;
-    left: 580px;
+    left: 700px;
 }
 .skills-icons>#i6{
     position: absolute;
-    top: 118px;
-    left: 581px ;
+    top: 112px;
+    left: 707px;
 }
 .skills-icons>#i7{
     position: absolute;
-    top: 105px;
-    left: 644px;
+    top: 151px;
+    left: 776px;
 }
+
+
 .skills-icons>#i8{
     position: absolute;
-    top: 153px;
-    right: 594px;
+    top: 103px;
+    left: 770px;
 }
 .skills-icons>#i9{
     position: absolute;
-    right: 555px;
-    top: 147px;
+    left: 815px;
+    top: 144px;
 }
+
+
 .skills-icons>#i10{
     position: absolute;
-    top: 203px;
-    right: 509px;
+    top: 170px;
+    left: 845px;
 }
+
+
 .skills-icons>#i11{
     position: absolute;
-    top: 167px;
-    right: 524px;
+    top: 206px;
+    left: 860px;
 }
+
+
 .skills-icons>#i12{
     position: absolute;
     top: 200px;
-    right: 460px;
+    left: 903px;
 }
 .skills-icons>#men-lap{
     position: absolute;
-    top: 250px;
-    right: 560px;
+    top: 245px;
+    left: 688px;
 }
-/* Skills */
+/* Educatoin */
 .education-container{
     position: relative;
     width: 100%;
-    height: 1000px;
-    
+    height: 1500px;
+    background-color: #2D2D2D;
 }
 .education-container>.edu-title{
     display: flex;
@@ -469,7 +484,10 @@ a img{
     margin-top: 10px;
 }
 .edu-title>h1{
-    margin-top:0.5rem;
+    margin-top:1.5rem;
+}
+.edu-title>img{
+    margin-top:1.1rem;
 }
 .high-school{
     position: absolute;
@@ -477,30 +495,31 @@ a img{
     width: 290px;
     height: 320px;
     border-radius: 10px;
-    top: 232px;
+    top: 270px;
     left: 155px;
     padding: 20px;
     /* display: flex;
     justify-content: center; */
 }
 .high-school>img{
-    width: 425px;
+    width: 450px;
     position: absolute;
-    top: -168px;
-    left: -88px;
+    bottom: 222px;
+    left: -107px;
 }
 .high-school>.content{
     position: absolute;
-    top: 130px;
+    top: 115px;
     left: 34px;
     line-height: 25px;
+    letter-spacing: 0.5px;
 }
 .high-school>.content>h2{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
 }
 .high-school>.content>h3{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     margin-top: 1rem;
 }
@@ -508,12 +527,14 @@ a img{
     background-color: #FF4081;
     color: #fffafa;
     padding: 15px 21px;
-    width: 250px;
+    width: 245px;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
+    align-items:center;
     flex-direction: row;
     gap: 10px;
+    letter-spacing: 0.5px;
 }
 .year-com>.rec{
     content: '';
@@ -523,55 +544,214 @@ a img{
 }
 .move-highsl{
     position: absolute;
+    top: 239px;
+    left: 22px;
+}
+/* higher sec */
+.higher-sec{
+    position: absolute;
+    background-color: #000814;
+    width: 290px;
+    height: 320px;
+    border-radius: 10px;
+    top: 695px;
+    left: 59vw;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center; */
+}
+.higher-sec>img{
+    width: 250px;
+    position: absolute;
+    top: -285px;
+    left: 14px;
+}
+.higher-sec>.content2{
+    position: absolute;
+    top: 105px;
+    left: 34px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+.higher-sec>.content2>h2{
+    font-size: 26px;
+    font-weight: 400;
+    line-height:27px;
+}
+.higher-sec>.content2>h3{
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 1rem;
+    max-width: 235px;
+}
+.year-com2{
+    background-color: #FF4081;
+    color: #fffafa;
+    padding: 15px 21px;
+    width: 245px;
+    border-radius: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+}
+.year-com2>.rec{
+    content: '';
+    width: 5px;
+    height: 30px;
+    background-color: #fffafa;
+}
+.move-highsl2{
+    position: absolute;
     top: 235px;
     left: 22px;
 }
-@media only screen and (max-width:1280vw) {
+/* college */
+.college{
+    position: absolute;
+    background-color: #000814;
+    width: 290px;
+    height: 320px;
+    border-radius: 10px;
+    top: 1165px;
+    left: 200px;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center; */
+}
+.college>img{
+    width: 425px;
+    position: absolute;
+    top: -217px;
+    left: -60px;
+}
+.college>.content3{
+    position: absolute;
+    top: 88px;
+    left: 34px;
+    line-height: 25px;
+    letter-spacing:0.5px;
+}
+.college>.content3>h2{
+    font-size: 26px;
+    font-weight: 400;
+}
+.college>.content3>h3{
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 1rem;
+    max-width: 200px;
+}
+.year-com3{
+    background-color: #FF4081;
+    color: #fffafa;
+    padding: 15px 21px;
+    width: 245px;
+    border-radius: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+}
+.year-com3>.rec{
+    content: '';
+    width: 5px;
+    height: 30px;
+    background-color: #fffafa;
+}
+.move-highsl3{
+    position: absolute;
+    top: 235px;
+    left: 22px;
+}
+
+
+@media only screen and (max-width:1280px) {
     nav>.hamburger{
         display: none;
     }
     .banner-container {
-        height: 82vh;
+        min-height: 92vh;
+    }
+    .banner-icons>div{
+        padding:7px 10px;
+    }
+    .banner-btn{
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+    .menu-items{
+        gap: 2rem;
     }
     .nav-header{
-        max-width: 100vw;
-        height: 10vh;
-    }
-    .nav-header>nav{
-        max-width: 100vw;
+        min-height: 10vh;
     }
     .menu-items,a{
-        font-size:0.7rem;
+        font-size:0.5rem;
         text-decoration: none;
     }
     .logo>a>img{
-        width: 5vw;
-        height: 7vh ;
+        width: 4vw;
+        height: 8vh;
     }
     .main-ban-con {
-        top:10vh;
+        top: 14vh;
+        gap: 2rem;
+        min-width: 318px;
     }
     .banner-text> h1 {
-        font-size: 2.1rem;
+        font-size: 1.6rem;
     }
     .banner-text > h2 {
         font-size: 0.8rem;
         letter-spacing: 2.5px;
         line-height: 2rem;
     }
+    .btn1-container a{
+        font-size: 2.1vmin;
+    }
+    .btn2-container a{
+        font-size: 2.1vmin;
+    }
     .banner-icons {
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
     .banner-image> img {
-        top:5vh;
+        top: 15vh;
+        right: 0;
+        min-width: 21rem;
+    
+    }
+    .img_move{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+    }
+    .image1{
+        top:0px;
+        left:0px;
+    }
+    .image2{
+        top:30px;
+        right:0px;
+        animation: msg-anim 2.2s ease-in infinite;
     }
     .image4 {
         bottom: 10vh;
         left: 0vw;
         animation: code-anim 2.4s ease-in infinite;
     }
-    .about-container{
-        max-height: 80vh;
+    .image3{
+        top: 60vh;
+        left:51vw;
+        animation: heart-anim 2.1s ease-in infinite;
+    }
+    .image5{
+        left: 52vw;
     }
     .about-container>.title>h1{
         margin-top: 0.2rem;
@@ -582,21 +762,54 @@ a img{
         height: 7vh;
     }
     .flex-container>img{
-        width: 15vw;
-        height: 50vh;
+        margin-top: 12px;
+        min-width: 210px;
+        height: 290px;
     }
     .about-btn{
-        width: 9vw;
+        min-width: 100px;
     }
     #curved-arrow {
-        width: 6vw;
-        height: 20vh;
-        left: 51vw;
-        top: 5vh;
+        width: 8vw;
+        height: 22vh;
+        left: 49vw;
+        top: 8vh;
     }
     .flex-container{
-        margin-top: 11vh;
+        margin-top: 13vh;
     }
+    .about-content>.data>p{
+        font-size: 0.6rem;
+    }
+    .about-content>.data>h1 {
+        font-size: 1.3rem;
+    }
+    .about-content>.data>h2 {
+        font-size: 0.6rem;
+    }
+    .about-content>.data>#role {
+        font-size: 0.6rem;
+    }
+    .circle1{
+        top: 62px;
+        left: 256px;
+    }
+    .circle2{
+        top: 149px;
+    right: 183px;
+    }
+    
+    .circle3{
+        bottom: 50px;
+    left: 117px;
+    }
+    .high-school>.content>h2 {
+        font-size: 22px;
+    }
+    .high-school>.content>h3 {
+        font-size: 9.5px;
+    }
+
 }
 /* @media only screen and (max-width:768vw) {
     a img{
