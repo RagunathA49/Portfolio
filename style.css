@@ -372,15 +372,16 @@ a img{
     position: relative;
     max-width:100%;
     height: 500px;
-    margin-top: 1.5rem;
     display: flex;
-    justify-content: center;
+    align-items:center; ;
+    flex-direction: column;
 }
 .skills-container>.sk-title{
     display: flex;
     flex-direction: row;
+    margin-top: 1.5rem;
     justify-content: center;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 .sk-title>img{
     width: 37px;
@@ -391,93 +392,147 @@ a img{
     font-weight: 100;
     font-size: 25px;
 }
-/* .skills-con{
-    background-color: red;
+.sk-parent {
+    position: relative;
+    top: -150px;
+    /* border: 3px solid red; */
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    animation: rotate-circle 30s linear infinite;
+}
+ /* .plant{
+    animation: maintain 30s linear infinite;
 } */
-.skills-con>.skills-line{
-    position: absolute;
-    top: 8rem;
-    left: 50vw;
-    width: 300px;
-    height: 300px;
-    background-color: red;
-}
-.skills-icons>.skills-line{
-    width:300px;
-    height: 300px;
-}
-.skills-icons>#i1{
-    position: absolute;
-    top: 232px;
-    left: 590px;
-}
-.skills-icons>#i2{
-    position: absolute;
-    top: 190px;
-    left: 591px;
-}
-.skills-icons>#i3{
-    position: absolute;
-    top: 185px;
-    left: 640px;
-}
-.skills-icons>#i4{
-    position: absolute;
-    top: 144px;
-    left: 637px;
-}
-.skills-icons>#i5{
-    position: absolute;
-    top: 158px;
-    left: 700px;
-}
-.skills-icons>#i6{
-    position: absolute;
-    top: 112px;
-    left: 707px;
-}
-.skills-icons>#i7{
-    position: absolute;
-    top: 151px;
-    left: 776px;
-}
+@keyframes maintain {
+    0% {
+        transform: rotate(0);
+    }
 
-
-.skills-icons>#i8{
-    position: absolute;
-    top: 103px;
-    left: 770px;
+    100% {
+        transform: rotate(360deg);
+    }
 }
-.skills-icons>#i9{
-    position: absolute;
-    left: 815px;
-    top: 144px;
+@keyframes rotate-circle{
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
+@keyframes scale {
+    0% {
+        transform: scale(1.2);
+    }
 
-
-.skills-icons>#i10{
-    position: absolute;
-    top: 170px;
-    left: 845px;
+    100% {
+        transform: scale(1);
+    }
 }
-
-
-.skills-icons>#i11{
-    position: absolute;
-    top: 206px;
-    left: 860px;
+.sk-men-lap #men-lap{
+    position: relative;
+    top: 106px;
+    left: 100px;
+    animation:up-down ;
+    animation-duration:1s; 
+    animation-direction: alternate; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
 }
-
-
-.skills-icons>#i12{
-    position: absolute;
-    top: 200px;
-    left: 903px;
+@keyframes up-down {
+    from { 
+        transform: translate3d(0, 0, 0); 
+        transform: translate3d(0, 0, 0); 
+    } 
+    to { 
+        transform: translate3d(0, 50px, 0); 
+        transform: translate3d(0, 50px, 0); 
+    } 
 }
-.skills-icons>#men-lap{
+.sk-parent #i1{
     position: absolute;
+    left: 11px;
     top: 245px;
-    left: 688px;
+    animation: maintain 30s linear infinite;
+    animation:scale 1s linear infinite alternate;
+}
+.sk-parent #i2{
+    position: absolute;
+    top: 179px;
+    left: -15px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i3{
+    position: absolute;
+    top: 96px;
+    left: -5px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i4{
+    position: absolute;
+    top: 30px;
+    left: 29px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i5{
+    position: absolute;
+    top: -5px;
+    left: 100px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i6{
+    position: absolute;
+    top: -11px;
+    right: 123px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i7{
+    position: absolute;
+    top: 20px;
+    right: 42px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i8{
+    position: absolute;
+    top: 83px;
+    right: 0px;
+    animation: maintain 30s linear infinite;
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i9{
+    position: absolute;
+    top: 188px;
+    left: 329px;
+  
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i10{
+    position: absolute;
+    top: 278px;
+    left: 284px;
+
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i11{
+    position: absolute;
+    top: 306px;
+    left: 70px;
+  
+    animation: scale 1s linear infinite alternate;
+}
+.sk-parent #i12{
+    position: absolute;
+    top: 323px;
+    left: 176px;
+    animation: scale 1s linear infinite alternate;
 }
 /* Educatoin */
 .education-container{
