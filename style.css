@@ -70,12 +70,17 @@ a img{
 .banner-container{
     position:relative;
     width:auto;
-    min-height: 500px;
+    min-height: 490px;
+    display: flex;
+    gap:320px;
+    flex-direction: row;
+    margin-left: 120px;
+    align-items: center;
     /* background-color: red; */
 }
 .banner-text{
     letter-spacing: 6px;
-    line-height: 8vh;
+    line-height: 60px;
 }
 .banner-text> h1{
     font-weight: 400;
@@ -88,6 +93,9 @@ a img{
     font-weight: 400;
     font-size: 1rem;
     letter-spacing: 3px;
+}
+.banner-img img{
+    width:34rem;
 }
 .banner-btn{
     /* background-color: black; */
@@ -118,12 +126,11 @@ a img{
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    max-width: 30vw;
-    gap: 4vh;
+    min-width: 460px;
+    min-height: 400px;
+    gap: 23px;
     padding: 1rem 2rem;
-    position: absolute;
-    top: 17vh;
-    left: 10vw;
+
 }
 .banner-icons{
     display: flex;
@@ -138,13 +145,8 @@ a img{
     border-radius: 50%;
 }
 
-.banner-image> img{
-    position: absolute;
-    max-width: 35vw;
-    top: 11vh;
-    right: 7vw;
-}
-.banner-image > .traingle{
+
+/* .banner-image > .traingle{
     position: absolute;
     top:50px;
     right:-105px;
@@ -155,7 +157,7 @@ a img{
     border-bottom: 700px solid rgb(47, 164, 238);
     transform: rotate(120deg);
     border-radius: 5px;
-}
+} */
 .img_move{
     width: 110px;
     height: 120px;
@@ -163,27 +165,27 @@ a img{
 }
 .image1{
     top:0px;
-    left:0px;
+    left:-57px;
     animation: wifi-anim 2.5s ease-in infinite;
 }
 .image2{
-    top:90px;
-    right:0px;
+    top:10px;
+    right:-26px;
     animation: msg-anim 2.2s ease-in infinite;
 }
 .image3{
-    top: 50vh;
-    left: 40vw;
+    top:40vh;
+    left: 37vw;
     animation: heart-anim 2.1s ease-in infinite;
 }
 .image4{
-    bottom: 13vh;
-    left: 0vw;
+    bottom: 0vh;
+    left: -6vw;
     animation: code-anim 2.4s ease-in infinite;
 }
 .image5{
-    top: 10vh;
-    left: 53vw;
+    top: 1vh;
+    left: 43vw;
     animation: cap-anim 2.4s ease-in infinite;
 }
 @keyframes wifi-anim {
@@ -254,7 +256,6 @@ a img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size:10px;
     align-items: center;
 }
 .title{
@@ -263,7 +264,7 @@ a img{
 .title>h1{
     margin-top: 0.2rem;
     font-weight: 100;
-    font-size: 27px;
+    font-size: 25px;
 
 }
 .title>h1>span{
@@ -281,7 +282,7 @@ a img{
     margin-top: 58px;
 }
 .flex-container>img{
-    width: 15vw;
+    width: 220px;
     height: 330px;
     border-radius: 10px;
 }
@@ -315,8 +316,8 @@ a img{
     line-height: 1.3rem;
 }
 .about-btn{
-    padding: 14px 24px;
-    width: 130px;
+    padding: 16px 20px;
+    width: 125px;
     text-align: center;
     color: #fffafa;
     background-color: rgb(255, 64, 129);
@@ -324,7 +325,9 @@ a img{
     border-radius: 6px;
     margin-top: 1rem;
 }
-
+.about-btn a{
+    font-size: .9rem;
+}
 #curved-arrow{
     width: 100px;
     height: 102px;
@@ -380,13 +383,13 @@ a img{
     gap:0.5rem;
 }
 .sk-title>img{
-    width: 40px;
-    height: 40px;
+    width: 37px;
+    height: 37px;
 }
 .sk-title>h1{
     margin-top:0.5rem;
     font-weight: 100;
-    font-size: 27px;
+    font-size: 25px;
 }
 /* .skills-con{
     background-color: red;
@@ -479,8 +482,7 @@ a img{
 /* Educatoin */
 .education-container{
     position: relative;
-    width: 100%;
-    height: 1500px;
+    height: 1088px;
     background-color: #2D2D2D;
 }
 .education-container>.edu-title{
@@ -504,7 +506,7 @@ a img{
     height: 320px;
     border-radius: 10px;
     top: 270px;
-    left: 155px;
+    left: 120px;
     padding: 20px;
     /* display: flex;
     justify-content: center; */
@@ -523,7 +525,7 @@ a img{
     letter-spacing: 0.5px;
 }
 .high-school>.content>h2{
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 400;
 }
 .high-school>.content>h3{
@@ -544,6 +546,15 @@ a img{
     gap: 10px;
     letter-spacing: 0.5px;
 }
+.year-com >h2{
+    font-weight: 500;
+}
+.year-com2 >h2{
+    font-weight: 500;
+}
+.year-com3 >h2{
+    font-weight: 500;
+}
 .year-com>.rec{
     content: '';
     width: 5px;
@@ -562,8 +573,8 @@ a img{
     width: 290px;
     height: 320px;
     border-radius: 10px;
-    top: 695px;
-    left: 59vw;
+    top: 487px;
+    left: 35vw;
     padding: 20px;
     /* display: flex;
     justify-content: center; */
@@ -582,7 +593,7 @@ a img{
     letter-spacing: 0.5px;
 }
 .higher-sec>.content2>h2{
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 400;
     line-height:27px;
 }
@@ -623,8 +634,8 @@ a img{
     width: 290px;
     height: 320px;
     border-radius: 10px;
-    top: 1165px;
-    left: 200px;
+    top: 720px;
+    right: 233px;
     padding: 20px;
     /* display: flex;
     justify-content: center; */
@@ -643,7 +654,7 @@ a img{
     letter-spacing:0.5px;
 }
 .college>.content3>h2{
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 400;
 }
 .college>.content3>h3{
@@ -749,6 +760,180 @@ a img{
 .certifi-btn a{
     font-size: 14px;
 }
+.allcerti-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/* work */
+
+.work-container{
+    /* #2d2d2d */
+    height:670px;
+    background-color:#2d2d2d;
+}
+.work-title{
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.work-title img{
+    margin-top: 1.5rem;
+}
+.work-title h1{
+    margin-top: 1.5rem;
+    font-weight: 100;
+    font-size: 25px;
+}
+.work-proj-container{
+    background-color: #00E5FF;
+    max-width: 310px;
+    border-radius: 10px;
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+}
+.work-proj-container:hover{
+    transform: scale(1.1)
+}
+.work-proj-container img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+.work-proj-container #blood-bank{
+    height: 214px;
+}
+.work-proj-container #net-design{
+    height: 214px;
+}
+.work-proj-container #cyber-threat{
+    height: 190px;
+}
+.project-parent{
+    margin-top: 2.5rem;
+    gap: 15px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.proj-title h1{
+    color:#000814;
+}
+.proj-title span{
+    color: #5B0888;
+}
+.total-content{
+    min-width: 200px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proj-content p{
+    color: #000814;
+}
+.proj-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.view-btn{
+    background-color: #5B0888;
+    padding: 12px 16px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.code-btn{
+    background-color: #5B0888;
+    padding: 12px 16px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.line{
+    border: 1px dashed #000814;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-prog{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.project-prog h2{
+    color: #000814;
+    font-size: 15px;
+}
+.project-prog div{
+    padding: 5px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    letter-spacing: 0.4px;
+}
+#skill1{
+    background-color: #E45010;
+    padding: 6px 6px;
+}
+#skill2{
+    background-color: #0277BD;
+    padding: 5px 6px;
+}
+#skill3{
+    background-color: #d6b92c;
+
+}
+#skill4{
+    background-color: #041181;
+}
+#int-skill1{
+    background-color: #E45010;
+    padding: 6px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+#bb-skill1{
+    background-color: #E45010;
+    padding: 6px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+#cybt-skill1{
+    background-color: #009196;
+    padding: 6px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+#cybt-skill2{
+    background-color: 
+    #181818;
+    padding: 6px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+#cybt-skill3{
+    background-color: #0e66d7;
+    padding: 6px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.proj-title h1{
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+.proj-content p{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
 
 
 
@@ -758,7 +943,8 @@ a img{
         display: none;
     }
     .banner-container {
-        min-height: 92vh;
+        min-height: 525px;
+        gap:140px;
     }
     .banner-icons>div{
         padding:7px 10px;
@@ -774,7 +960,7 @@ a img{
         min-height: 10vh;
     }
     .menu-items,a{
-        font-size:0.5rem;
+        font-size:0.6rem;
         text-decoration: none;
     }
     .logo>a>img{
@@ -795,28 +981,23 @@ a img{
         line-height: 2rem;
     }
     .btn1-container a{
-        font-size: 2.1vmin;
+        font-size: 1.1vmax;
     }
     .btn2-container a{
-        font-size: 2.1vmin;
+        font-size: 1.1vmax;
     }
     .banner-icons {
         gap: 1.2rem;
     }
-    .banner-image> img {
-        top: 15vh;
-        right: 0;
-        min-width: 21rem;
-    
-    }
+
     .img_move{
         width: 90px;
         height: 90px;
         position: absolute;
     }
     .image1{
-        top:0px;
-        left:0px;
+        top:41px;
+        left:-60px;
     }
     .image2{
         top:30px;
@@ -824,42 +1005,46 @@ a img{
         animation: msg-anim 2.2s ease-in infinite;
     }
     .image4 {
-        bottom: 10vh;
-        left: 0vw;
+        bottom: 3vh;
+        left: -7vw;
         animation: code-anim 2.4s ease-in infinite;
     }
     .image3{
-        top: 60vh;
-        left:51vw;
+        top:52vh;
+        left:40vw;
         animation: heart-anim 2.1s ease-in infinite;
     }
     .image5{
-        left: 52vw;
+        top: 3px;
+        left: 48vw;
+    
     }
     .about-container>.title>h1{
         margin-top: 0.2rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .about-container>.title>img{
-        width: 3vw;
-        height: 7vh;
+        width: 35px;
+        height: 30px;
+    
     }
     .flex-container>img{
         margin-top: 12px;
         min-width: 210px;
         height: 290px;
     }
-    .about-btn{
-        min-width: 100px;
-    }
+
     #curved-arrow {
-        width: 8vw;
-        height: 22vh;
-        left: 49vw;
+        width: 95px;
+        height: 76px;
+        left: 50vw;
         top: 50px;
     }
     .flex-container{
         margin-top: 58px;
+    }
+    .about-btn a {
+        font-size: 0.8rem;
     }
     .about-content>.data>p{
         font-size: 0.6rem;
@@ -905,7 +1090,26 @@ a img{
         font-size: 9.5px;
     }
 
+    .high-school{
+        top: 270px;
+        left: 59px;
+    }
+    .higher-sec{
+  
+        top: 506px;
+        left: 37vw;
+    }
+    .college{  
+        top: 678px;
+        right: 12px;
+    }
 
+    .work-container{
+        height:1100px;
+    }
+    .project-parent{
+        height:1000px;
+    }
 }
 /* @media only screen and (max-width:768vw) {
     a img{

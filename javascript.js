@@ -16,3 +16,22 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// anchore tag smooth scrolling 
+var navmenuanchortag = document.querySelectorAll('.menu-items a');
+for (var i = 0; i < navmenuanchortag.length; i++){
+    navmenuanchortag[i].addEventListener("click",function(){
+        event.preventDefault();
+        var targetSectionID = this.textContent.trim().toLowerCase();
+        var targetSection = document.getElementById(targetSectionID);
+        // console.log(targetSection);
+        var interval = setInterval(function(){
+            var targetSectionCoordinates = targetSection.getBoundingClientRect();
+            if(targetSectionCoordinates.top <= 0){
+                clearInterval(interval);
+                return;
+            }
+            window.scrollBy(0,20);
+        })
+    })
+}
