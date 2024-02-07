@@ -8,7 +8,13 @@
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper cdn -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="nav-header">
@@ -213,92 +219,103 @@
             <img width="40" height="40" src="https://img.icons8.com/color-glass/48/certificate--v1.png" alt="certificate--v1"/>
             <h1>Certificate</h1>
         </div>
-        <div class="allcerti-container">
-            <!-- 1 -->
-            <div class="certifi1">
-                <img src="photo/aws.jpg" alt="">
-                <div class="certifi1content">
-                    <h1>Cloud Operations</h1>
-                    <h3>->Aws Academy</h3>
-                </div>
-                <p class="description">It covers how to effectively manage AWS resources, optimize cloud infrastructure, and implement best
-                    practices for secure and efficient cloud operations.</p>
-                <div class="certifi-btn">
-                    <a href="">Download</a>
-                    <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
-                </div>
-            </div>
-            <!-- 2 -->
-            <div class="certifi1">
-                <img src="photo/bugbounty.jpg" alt="">
-                <div class="certifi1content">
-                    <h1>Bug Bounty</h1>
-                    <h3>->Prompt Infotech</h3>
-                </div>
-                <p class="description">The Bug Bounty course empowers participants to identify and responsibly disclose security
-                    vulnerabilities in software, websites, or applications, enhancing cybersecurity measures</p>
-                <div class="certifi-btn">
-                    <a href="">Download</a>
-                    <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
-                </div>
-            </div>
-            <!-- 3 -->
-            <div class="certifi1">
-                <img src="photo/ceh.jpg" alt="">
-                <div class="certifi1content">
-                    <h1>Certified Ethical Hacking</h1>
-                    <h3>->Prompt Infotech</h3>
-                </div>
-                <p class="description">The Ethical Hacking course empowers the knowledge and skills to identify and rectify cybersecurity
-                    vulnerabilities, conduct penetration testing, and fortify systems against cyber threats.</p>
-                <div class="certifi-btn">
-                    <a href="">Download</a>
-                    <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class="certifi1">
-                <img src="photo/comptiaA.jpg" alt="">
-                <div class="certifi1content">
-                    <h1>Comptia A+</h1>
-                    <h3>->Udemy</h3>
-                </div>
-                <p class="description">The Ethical Hacking course empowers the knowledge and skills to identify and rectify cybersecurity
-                    vulnerabilities, conduct penetration testing, and fortify systems against cyber threats.</p>
-                <div class="certifi-btn">
-                    <a href="">Download</a>
-                    <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class="certifi1">
-                <img src="photo/python.jpg" alt="">
-                <div class="certifi1content">
-                    <h1>The Python Certified</h1>
-                    <h3>->Prompt Infotech</h3>
-                </div>
-                <p class="description">Python is a general-purpose language, which means it can be used to build just about anything, which will be made easy with the  right tools/libraries</p>
-                <div class="certifi-btn">
-                    <a href="">Download</a>
-                    <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="certifi1">
-                <img src="photo/hackerrank.jpg" alt="">
-                <div class="certifi1content">
-                    <h1>Css</h1>
-                    <h3>->HackerRank</h3>
-                </div>
-                <p class="description">The CSS HackerRank course hones participants' proficiency in Cascading Style Sheets, fostering
-                    advanced skills in web styling and design.
-                    </p>
-                <div class="certifi-btn">
-                    <a href="">Download</a>
-                    <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
-                </div>
-            </div>
-            <!-- 7 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                  <div class="swiper-slide ">
+                    <div class="certifi1">
+                        <img src="photo/aws.jpg" alt="">
+                        <div class="certifi1content">
+                            <h1>Cloud Operations</h1>
+                            <h3>->Aws Academy</h3>
+                        </div>
+                        <p class="description">It covers how to effectively manage AWS resources, optimize cloud infrastructure, and implement best
+                            practices for secure and efficient cloud operations.</p>
+                        <div class="certifi-btn">
+                            <a href="">Download</a>
+                            <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide ">
+                    <div class="certifi1">
+                        <img src="photo/bugbounty.jpg" alt="">
+                        <div class="certifi1content">
+                            <h1>Bug Bounty</h1>
+                            <h3>->Prompt Infotech</h3>
+                        </div>
+                        <p class="description">The Bug Bounty course empowers participants to identify and responsibly disclose security
+                            vulnerabilities in software, websites, or applications, enhancing cybersecurity measures</p>
+                        <div class="certifi-btn">
+                            <a href="">Download</a>
+                            <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide ">
+                    <div class="certifi1">
+                        <img src="photo/ceh.jpg" alt="">
+                        <div class="certifi1content">
+                            <h1>Certified Ethical Hacking</h1>
+                            <h3>->Prompt Infotech</h3>
+                        </div>
+                        <p class="description">The Ethical Hacking course empowers the knowledge and skills to identify and rectify cybersecurity
+                            vulnerabilities, conduct penetration testing, and fortify systems against cyber threats.</p>
+                        <div class="certifi-btn">
+                            <a href="">Download</a>
+                            <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide ">
+                   <!-- 4 -->
+                    <div class="certifi1">
+                        <img src="photo/comptiaA.jpg" alt="">
+                        <div class="certifi1content">
+                            <h1>Comptia A+</h1>
+                            <h3>->Udemy</h3>
+                        </div>
+                        <p class="description">The Ethical Hacking course empowers the knowledge and skills to identify and rectify cybersecurity
+                            vulnerabilities, conduct penetration testing, and fortify systems against cyber threats.</p>
+                        <div class="certifi-btn">
+                            <a href="">Download</a>
+                            <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide ">
+                     <!-- 5 -->
+                    <div class="certifi1">
+                        <img src="photo/python.jpg" alt="">
+                        <div class="certifi1content">
+                            <h1>The Python Certified</h1>
+                            <h3>->Prompt Infotech</h3>
+                        </div>
+                        <p class="description">Python is a general-purpose language, which means it can be used to build just about anything, which will be made easy with the  right tools/libraries</p>
+                        <div class="certifi-btn">
+                            <a href="">Download</a>
+                            <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide ">
+                     <!-- 6 -->
+                    <div class="certifi1">
+                        <img src="photo/hackerrank.jpg" alt="">
+                        <div class="certifi1content">
+                            <h1>Css</h1>
+                            <h3>->HackerRank</h3>
+                        </div>
+                        <p class="description">The CSS HackerRank course hones participants' proficiency in Cascading Style Sheets, fostering
+                            advanced skills in web styling and design.
+                            </p>
+                        <div class="certifi-btn">
+                            <a href="">Download</a>
+                            <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide ">
+                    <!-- 7 -->
             <div class="certifi1">
                 <img src="photo/devtown.jpg" alt="">
                 <div class="certifi1content">
@@ -312,7 +329,9 @@
                     <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
                 </div>
             </div>
-            <!-- 8 -->
+                  </div>
+                  <div class="swiper-slide ">
+                    <!-- 8 -->
             <div class="certifi1">
                 <img src="photo/download.jpg" alt="">
                 <div class="certifi1content">
@@ -328,7 +347,9 @@
                     <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
                 </div>
             </div>
-            <!-- 9 -->
+                  </div>
+                  <div class="swiper-slide ">
+                    <!-- 9 -->
             <div class="certifi1">
                 <img src="photo/sockets.jpg" alt="">
                 <div class="certifi1content">
@@ -343,7 +364,9 @@
                     <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
                 </div>
             </div>
-            <!-- 10 -->
+                  </div>
+                  <div class="swiper-slide ">
+                    <!-- 10 -->
             <div class="certifi1">
                 <img src="photo/ibm.jpg" alt="">
                 <div class="certifi1content">
@@ -357,7 +380,9 @@
                     <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
                 </div>
             </div>
-            <!-- 11 -->
+                  </div>
+                  <div class="swiper-slide ">
+                                <!-- 11 -->
             <div class="certifi1">
                 <img src="photo/network-security.jpg" alt="">
                 <div class="certifi1content">
@@ -372,7 +397,9 @@
                     <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
                 </div>
             </div>
-            <!-- 12 -->
+                  </div>
+                  <div class="swiper-slide ">
+                    <!-- 12 -->
             <div class="certifi1">
                 <img src="photo/redteam.jpg" alt="">
                 <div class="certifi1content">
@@ -387,6 +414,10 @@
                     <img width="30" height="30" src="https://img.icons8.com/arcade/64/download.png" alt="download"/>
                 </div>
             </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
@@ -484,7 +515,7 @@
             </div>
         </div>
         <div class="work-proj-container">
-            <img id="cyber-threat" src="/portfolio/photo/cyber-threat.jpg" alt="">
+            <img id="cyber-threat" src="/photo/blood 1.jpg" alt="">
 
             <div class="total-content">
                 <div class="proj-title">

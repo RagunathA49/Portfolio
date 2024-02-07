@@ -406,7 +406,7 @@ a img{
 } */
 @keyframes maintain {
     0% {
-        transform: rotate(0);
+        transform: rotate(0) ;
     }
 
     100% {
@@ -415,7 +415,7 @@ a img{
 }
 @keyframes rotate-circle{
     0% {
-        transform: rotate(0)
+        transform: rotate(0);
     }
 
     100% {
@@ -745,6 +745,38 @@ a img{
 
 /* Certificate */
 
+/* swiper start */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-left{
+    background-image: none;
+}
+
+ .swiper-slide {
+    filter: blur(2.5px);
+    border-radius: 10px; /* Add border radius for rounded corners */
+    width:80%; /* Adjust the width of the slides */
+    max-width: 300px; /* Set a maximum width for responsiveness */
+    height: auto; /* Allow the height to adjust based on content */
+    margin: 0 auto; /* Center the slides horizontally */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+ .swiper-slide-active{
+    filter:blur(0px);
+ }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+ 
+/* swiper end */
+
+
 .certificate-title{
     width: 100%;
     display: flex;
@@ -753,10 +785,6 @@ a img{
     justify-content: center;
     align-items: center;
     gap: 2px;
-}
-.certificate-container{
-    height: 500px;
-
 }
 .certificate-title h1{
     font-weight: 100;
@@ -814,11 +842,6 @@ a img{
 }
 .certifi-btn a{
     font-size: 14px;
-}
-.allcerti-container{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
 }
 /* work */
 
@@ -904,7 +927,7 @@ a img{
 }
 .view-btn{
     background-color: #5B0888;
-    padding: 12px 16px;
+    padding: 11px 12px;
     border-radius: 5px;
     letter-spacing: 1px;
 }
