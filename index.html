@@ -15,16 +15,26 @@
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="nav-header">
-        <nav>
+    <header>
+        <!-- <nav>
+
             <div class="logo">
                 <a href="#">
                     <img src="photo/ragu_logo.png">
                 </a>
             </div>
             <div class="menu-items">
+                <div class="logo-toggle">
+                    <a href="#">
+                        <img src="photo/ragu_logo.png">
+                    </a>
+                </div>
                 <a href="#"  class="nav-link"style="color:#FF9F00;">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
@@ -37,19 +47,40 @@
                     <a href="#" class="btn">Hire Me</a>
                 </div>
             </div>
+        </nav> -->
 
-            <div class="hamburger">
-                <span  class="bar" id="line-1"></span>
-                <span class="bar" id="line-2"></span>
-                <span class="bar" id="line-3"></span>
-            </div>
-        </nav>
+     <nav class="nav">
+        <a id="logo" href="#">
+            <img src="photo/ragu_logo.png">
+        </a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">Certificates</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="#" class="btn">Hire Me</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </div>
+     </nav>
     </header>
     <div class="banner-container">
         <div class="main-ban-con">
             <div class="banner-text">
                 <h1>Hi There,</h1>
-                <h1>I'm Raguath.A</h1>
+                <h1 class="ml6">
+                    <span class="text-wrapper">
+                      <span class="letters">I'm Raguath.A</span>
+                    </span>
+                </h1>
+                <!-- <h1 class="ml2"></h1> -->
                 <h2>I'm a <span>Full Stack Developer</span></h2>
             </div>
             <div class="banner-btn">
@@ -81,8 +112,6 @@
             </div>
         </div>
         <div class="banner-image">
-            <!-- <div class="traingle">
-            </div> -->
             <img src="https://static.tildacdn.com/tild3935-3066-4230-b161-326631363864/green_freelancer.svg" alt="main-character">
         </div>
         <div class="image-banner-con">
@@ -171,10 +200,10 @@
         <h1>Education</h1>
         
     </div>
-    <div class="card-container">
+    <div class="flex-edu-container">
         <div class="high-school">
             <img src="photo/cartoon-character.jpg" alt="">
-            <div class="content">
+            <div class="contentx">
                 <h2>High School</h2>
                 <h3>ST.JOHNS MATRICULATION HIGHER SECONDARY SCHOOL</h3>
             </div>
@@ -184,30 +213,31 @@
                 <h2>Completed</h2>
             </div>
         </div>
-        <div class="higher-sec">
-            <img src="photo/schoolstudetn2.jpg" alt="">
-            <div class="content2">
+        <div class="high-school">
+            <img id="img2"src="photo/schoolstudetn2.jpg" alt="">
+            <div class="content">
                 <h2>Higher Secondary School</h2>
                 <h3>BHARATHIYAR MATRICULATION HIGHER SECONDARY SCHOOL</h3>
             </div>
-            <div class="move-highsl2 year-com2">
+            <div class="move-highsl year-com">
                 <h2>2018-2020</h2>
                 <div class="rec"></div>
                 <h2>Completed</h2>
             </div>
         </div>
-        <div class="college">
-            <img src="photo/college stude.jpg" alt="">
-            <div class="content3">
+        <div class="high-school">
+            <img id ="img3"src="photo/college stude.jpg" alt="">
+            <div class="content">
                 <h2>Bachelor Of Engineering And Technology</h2>
-                <h3>SRM INSTITUTE OF SCIENCE AND TECHNOLOGY</h3>
+                <h3>->SRM INSTITUTE OF SCIENCE AND TECHNOLOGY</h3>
             </div>
-            <div class="move-highsl3 year-com3">
+            <div class="move-highsl year-com">
                 <h2>2020-2024</h2>
                 <div class="rec"></div>
                 <h2>Completed</h2>
             </div>
         </div>
+    
     </div>
  </div>
 </section>
@@ -431,7 +461,7 @@
     </div>
     <div class="project-parent">
         <div class="work-proj-container">
-            <img id="blood-bank" src="/portfolio/photo/blood 1.jpg" alt="">
+            <img id="blood-bank" src="photo/blood 1.jpg" alt="">
 
             <div class="total-content">
                 <div class="proj-title">
@@ -461,7 +491,7 @@
             </div>
         </div>
         <div class="work-proj-container">
-            <img id="net-design"src="/portfolio/photo/Network-Design.jpg" alt="">
+            <img id="net-design"src="photo/Network-Design.jpg" alt="">
 
             <div class="total-content ">
                 <div class="proj-title">
@@ -488,7 +518,7 @@
             </div>
         </div>
         <div class="work-proj-container">
-            <img id="blood-bank" src="/portfolio/photo/Difference-Between-Compiler-And-Interpreter-In-Java.jpg" alt="">
+            <img id="blood-bank" src="photo/Difference-Between-Compiler-And-Interpreter-In-Java.jpg" alt="">
 
             <div class="total-content">
                 <div class="proj-title">
@@ -515,7 +545,7 @@
             </div>
         </div>
         <div class="work-proj-container">
-            <img id="cyber-threat" src="/photo/blood 1.jpg" alt="">
+            <img id="cyber-threat" src="photo/cyber-threat.jpg" alt="">
 
             <div class="total-content">
                 <div class="proj-title">
@@ -555,6 +585,7 @@
         </div>
         
     </div>
+
 </section>
 <!--Contact -->
 <section id="contact">
@@ -562,6 +593,7 @@
 </section>
     <!-- jAVASCRIPT FILE -->
     <script src="./javascript.js"></script>
+    
 </body>
 </html>
 
