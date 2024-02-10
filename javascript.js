@@ -1,21 +1,23 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".menu-items");
+// const hamburger = document.querySelector('.hamburger');
+// const navbar = document.querySelector('ul');
 
-hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+// hamburger.addEventListener('click', function () {
+//   navbar.classList.toggle('slide');
+// });
 
-const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+//Optionally, prevent default action on anchor tags to prevent page jumps
+// document.querySelectorAll('.nav ul ').forEach(function (item) {
+//   item.addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent default action of anchor tag
+//     // Additional logic to handle navigation behavior if needed
+//   });
+// });
 
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
+
+
+
 
 // anchore tag smooth scrolling 
 var navmenuanchortag = document.querySelectorAll('.menu-items a');
@@ -52,4 +54,23 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
   });
- 
+
+
+  
+  var textWrapper = document.querySelector('.ml6 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml6 .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 750,
+      delay: (el, i) => 50 * i
+    }).add({
+      targets: '.ml6',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
