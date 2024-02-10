@@ -113,26 +113,41 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
-.btn1-container {
-    color: #fffafa;
-    background-color: #008119;
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #000;
     text-align: center;
-    border-radius: 7px;
-    padding: 10px 10px 10px 15px;
-    min-height: 47px;
-    min-width: 120px;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 0.875rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1;
+    border-radius:0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #008119;
+    border-color: #008119;
+  }
 
-}
-.btn2-container{
-    color: #fffafa;
+  .btn i {
+    padding: 0 5px 0 0;
+  }
+  .btn-outline-success{
+    color: #fff;
+    border: 2px solid #008119;
+    
+  }
+  .btn-outline-success:hover {
+    color: #fff;
     background-color: #008119;
-    text-align: center;
-    border-radius: 7px;
-    padding: 10px 10px 10px 15px;
-    /* padding-left: 18px; */
-    min-height: 47px;
-    min-width: 120px;
-}
+    border-color: #008119;
+    transition:0.5s ease-in-out;
+  }
 .main-ban-con{
     /* background-color: red; */
     display: flex;
@@ -994,16 +1009,6 @@ nav{
         letter-spacing: 2.5px;
         line-height: 2rem;
     }
-    .btn1-container a{
-        font-size: 1.1vmax;
-    }
-    .btn2-container a{
-        font-size: 1.1vmax;
-    }
-    .banner-icons {
-        gap: 1.2rem;
-    }
-
     .img_move{
         width: 90px;
         height: 90px;
@@ -1161,7 +1166,7 @@ nav{
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
       #click:checked ~ ul li a{
-        margin-left: px;
+        margin-left: 0px;
       }
       nav ul li a.active,
       nav ul li a:hover{
@@ -1239,11 +1244,11 @@ nav{
         left:0;
     }
     .image3 {
-        left: 80vw;
+        left: 470px;
     }
     .image4 {
         bottom: 0;
-        left: 33vw;
+        left: 20px;
     }
     .image2{
         top: 280px;
@@ -1252,23 +1257,9 @@ nav{
     .image5{
         left: 80vw;
     }
-    .circle1{
-        left: 60px;
-        top: 250px;
-    }
-    .circle2{
-        right: 80px;
-    }
-    .circle3{
-        left: 50px;
-    }
 }
-@media screen and (max-width: 400px) 
-{
-    /* .image-banner-con .image5{
-        left:370px;
-    } */
 
+@media screen and (max-width: 400px){
     .banner-image img{
         width:300px;
     }
@@ -1299,12 +1290,107 @@ nav{
     {
         left: 10px;
     top: 150px;
-}
-.circle3{
-    left: 270px;
-}
-}
+    }
+    .circle3{
+        left: 250px;
+    }
 
+    .about-content>.data>p{
+        width: 208px;
+    }
+    .flex-container img{
+        width: 200px;
+        height: 310px;
+    }
+    .sk-men-lap #men-lap {
+        top: 62px;
+    left: 78px;
+}
+    
+    .sk-parent 
+    {
+        width: 300px;
+        height: 300px;
+        border: 3px solid red;
+        /* animation: none; */
+    }
+    .sk-parent #i1 {
+        left:35px;
+    }
+    .sk-parent #i2 {
+        left: -10px;
+    }
+    .sk-parent #i3 {
+        left: -14px;
+    }
+    .sk-parent #i4 {
+        left: 14px;
+    }
+    .sk-parent #i5 {
+        left: 67px;
+    }
+    .sk-parent #i6 {
+        top: -15px;
+    }
+    .sk-parent #i7 {
+        top: -10px;
+    }
+    .sk-parent #i8 {
+        top: 105px;
+        right: -13px;
+    }
+    .sk-parent #i9 {
+        left: 263px;
+    }
+    .sk-parent #i10 {
+        top: 41px;
+        left: 254px;
+}
+    .sk-parent #i11 {
+        top: 274px;
+        left: 110px;
+    }
+    .sk-parent #i12 {
+        left: 204px;
+        top: 256px;
+    }
+    
+    
+
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+ 
+    .image5{
+        left: 77vw;
+    }
+    .image2{
+        top: 306px;
+    }
+    .image4{
+        bottom:-12px;
+    }
+    .big-circle{
+        display: none;
+    }
+    .circle2{
+        left: 17px;
+        top: 160px;
+    }
+    #curved-arrow{
+        left: 48vw;
+        height: 83px;
+    }
+    .circle1{
+        left: 320px;
+    }
+    .circle3{
+        left:300px;
+    }
+    .flex-edu-container{
+        margin-top: 2rem;
+        gap: 24px;
+    }
+  } 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {
  
