@@ -1101,7 +1101,7 @@ textarea{
 }
 form button {
     color: white;
-    background: #da1a16;
+    /* background: #da1a16; */
     padding: 12px 20px;
     float: right;
     margin-top: 10px;
@@ -1117,31 +1117,34 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-height: 1000px;
+    height: auto;
 }
 .foot-content1{
     /* background-color: green; */
     display: flex;
     flex-direction: column;
-    padding: 1rem 10px 10px 10px;
+    padding: 2rem 10px 10px 10px;
     max-width: 250px;
-    height: 300px;
+    height: 250px;
 }
 .foot-content1 h1{
     font-size: 30px;
     letter-spacing: 1px;
 }
 .foot-content1 p{
-    margin-top: 20px;
+    margin-top:2rem;
     line-height: 19px;
     font-size: 12px;
 }
 .foot-link{
     /* background-color:black; */
-    padding: 15px 10px 10px 10px;
+    padding: 2rem 10px 10px 10px;
     display: flex;
     flex-direction: column;
     max-width: 500px;
     gap:10px;
+    max-height: 260px;
 }
 .foot-link h1{
     font-size: 30px;
@@ -1152,8 +1155,9 @@ footer{
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    padding: 15px 10px 10px 10px;
-    height: 300px;
+    padding: 2rem 10px 10px 10px;
+    height: 330px;
+    gap: 10px;
 }
 .chdnavlink {
     display: flex;
@@ -1184,13 +1188,14 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 1rem;
 
 }
 
 .contact-info {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 7px;
     justify-content: left;
     align-items: center;
     margin-bottom: 1rem;
@@ -1204,14 +1209,16 @@ footer{
     font-weight: 100;
 }
 .contactinfo-parent{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
-
+.banner-icons{
+    gap: 1rem;
+}
 
 .foot-line{
     margin-top:10px;
-    width: 1400px;
+    width: 83vw;
     margin-left: 70px;
 }
 .design-foot{
@@ -1353,6 +1360,14 @@ footer{
     .contact-parent img{
         width:500px;
     }
+
+    .foot-link{
+        margin-left: 2rem;
+    }
+    .foot-contact{
+        margin-left:2rem;
+        width: 320px;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -1383,6 +1398,13 @@ footer{
     }
     .contact-parent img{
         width: 454px 
+    }
+    .foot-parent{
+        justify-content: flex-start;
+        padding-left: 3rem;
+    }
+    .foot-link{
+        margin-left: 4rem;
     }
 
 
@@ -1472,7 +1494,26 @@ footer{
     .contact-parent img {
         width: 560px;
     }
-  
+
+    .foot-parent{
+        padding-left: 2rem;
+    }
+    .foot-content1{
+        height:200px;
+    }
+    .foot-link{
+        margin-left:0px
+    }
+    .foot-line{
+        margin-left:40px
+    }
+    .foot-contact{
+        width: 300px;
+        margin-left: 0px;
+    }
+    .banner-icons{
+        gap:17px;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -1656,6 +1697,14 @@ footer{
     form{
         width: auto;
     }
+    .foot-parent{
+        padding: 1vw;
+    }
+    .foot-line{
+        width: 72vw;
+        margin-left: 30px;
+    }
+    
 
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
@@ -1690,6 +1739,23 @@ footer{
     .flex-edu-container{
         margin-top: 2rem;
         gap: 24px;
+    }
+    .foot-content1{
+        height: 180px;
+    }
+    .foot-content1 p{
+        font-size: 14px;
+    }
+    .foot-link{
+        padding: 0 0 0 10px;
+        width: 300px;
+    }
+    .chdnavlink{
+        margin-bottom:10px
+    }
+    .foot-line
+    {
+        margin-left: 6vw;
     }
   } 
 /* Small devices (portrait tablets and large phones, 600px and up) */
