@@ -10,7 +10,6 @@
 }
 body{
     background: #1E1E1E;
-
     overflow-x: hidden;
 }
 
@@ -98,7 +97,7 @@ nav{
     font-weight: 400;
     font-size: 2.5rem;
 }
-.banner-text> h2>span{
+.banner-text div span{
     color:#E45010;
 }
 .banner-text > h2{
@@ -1101,7 +1100,7 @@ textarea{
 }
 form button {
     color: white;
-    /* background: #da1a16; */
+    background: #da1a16;
     padding: 12px 20px;
     float: right;
     margin-top: 10px;
@@ -1129,6 +1128,7 @@ footer{
     height: 250px;
 }
 .foot-content1 h1{
+    color:#41a8f0;
     font-size: 30px;
     letter-spacing: 1px;
 }
@@ -1147,6 +1147,7 @@ footer{
     max-height: 260px;
 }
 .foot-link h1{
+    color:#fc9f1b;
     font-size: 30px;
     letter-spacing: 1px;
 }
@@ -1181,6 +1182,7 @@ footer{
     color:rgb(255, 159, 0);
 }
 .foot-contact h1{
+    color: #fc3d80;
     font-size: 30px;
     letter-spacing: 1px;
 }
@@ -1225,9 +1227,171 @@ footer{
     text-align: center;
     padding: 20px 0px 30px 0px;
 }
+.exp-title{
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.exp-title img{
+    /* margin-bottom: 1.5rem; */
+    font-weight: 100;
+    font-size: 25px;
+    
+}
+#experience-con
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.timeline{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position:relative;
+    width: 75%;
+    /* border:2px solid black; */
+}
 
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
 
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 16%;
+    right: -13.3%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index: 1;
+    background-color: red;
+}
+.timeline-box:nth-child(2n)::after{
+    content:'';
+    position: absolute;
+    top: 34%;
+    left:-8.5%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index: 1;
+    background-color: red;
+}
+.timeline-box{
+    position:relative;
+    margin:5px;
+    width: 40%;
+    left: 5%;
+    height: auto;
+    min-height: 180px;
+    /* border: 2px solid black; */
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+}
 
+.timeline-divider{
+    position:absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b ;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveler{
+    position: sticky;
+    top:30%;
+    z-index: 2;
+    transform: rotate(90deg);
+}
+.timeline-traveler i{
+    color: #0fd5ae;
+    font-size: 30px;
+}
+.timeline-box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 10px;
+
+}
+.timeline-box h1{
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    margin: 10px 10px 0px 0px;
+    letter-spacing:1.5px;
+    color: #fc9f1b;
+}
+
+.timeline-box h3{
+    position: absolute;
+    font-size: 14px;
+    top: 32px;
+    right: 0;
+    margin: 10px 10px 0px 0px;
+    letter-spacing:1.5px;
+    color: #fc3d80;
+}
+.timeline-box h4{
+    position: absolute;
+    font-size: 12px;
+    right: 0;
+    top:60px;
+    margin: 10px 10px 0px 0px;
+    letter-spacing:1.5px;
+    color: #080909;
+    
+} 
+.timeline-box:nth-child(2n) img{
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 0px 0px;
+    float: right;
+    border:2px solid #000814;
+    
+}
+
+.timeline-box:nth-child(2n) h1{
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: 0;
+    margin: 10px 0px 0px 10px;
+    letter-spacing:1.5px;
+}
+.timeline-box:nth-child(2n) h3{
+    position: absolute;
+    font-size: 14px;
+    top: 32px;
+    left: 0;
+    margin: 10px 0px 0px 10px;
+    letter-spacing:1.5px;
+}
+.timeline-box:nth-child(2n) h4{
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    top: 55px;
+    margin: 10px 0px 0px 10px;
+    letter-spacing:1.5px;
+}
+.timeline-box:nth-child(2n) p{
+    color: black;
+    font-size: 10px;
+    width: 374px;
+    position: absolute;
+    bottom: 6px;
+    margin: 0px 0px 0px 10px;
+}
 @media only screen and (max-width:1280px) {
     nav{
         padding:12px;
@@ -1368,6 +1532,32 @@ footer{
         margin-left:2rem;
         width: 320px;
     }
+    .timeline-box img{
+        width:60px;
+        height: 60px;
+    }
+    .timeline-box h1{
+        font-size: 17px;
+        width: 197px;
+    }
+    .timeline-box h3{
+        top: 50px;
+    }
+    .timeline-box h4 {
+        top: 80px;
+    }
+    .timeline-box:nth-child(2n) h3{
+        top:27px;
+        font-size: 12px;
+    }
+    .timeline-box:nth-child(2n) h4{
+        top:57px;
+    }
+    .timeline-box:nth-child(2n) p{
+        bottom: 11px;
+        width: 280px;
+    }
+    
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -1407,6 +1597,13 @@ footer{
         margin-left: 4rem;
     }
 
+    .timeline{
+        width: 100%;
+    }
+    .timeline-box h1{
+        font-size: 18px;
+        width: 227px;
+    }
 
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1514,6 +1711,41 @@ footer{
     .banner-icons{
         gap:17px;
     }
+    .timeline-box{
+        width: 45%;
+        height: 207px;
+        left:2%;
+    }
+    
+    .timeline-box h1 {
+        font-size: 20px;
+        width: 230px;
+        height: 50px;
+    }
+    .timeline-box h3 {
+        width: 159px;
+        margin-top: 17px;
+}
+    .timeline-box h4{
+        top: 78px;
+        margin: 10px 10px 0px 0px;
+    }
+    .timeline-box:nth-child(2n) h1{
+        width: 300px;
+    }
+    .timeline-box:nth-child(2n) h3{
+        width: 275px;
+    }
+    .timeline-box:nth-child(2n) h4{
+        top:67px;
+    }
+    .timeline-box:nth-child(2n) p {
+        bottom: 10px;
+        width: 242px;
+    }
+    .timeline-box:nth-child(2n+1)::after {
+        right: -8%;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -1571,6 +1803,18 @@ footer{
     }
     .contact-parent img{
         width:500px;
+    }
+    .timeline-box h1{
+        font-size: 15px;
+        width: 174px;
+    }
+    .timeline-box:nth-child(2n) h1{
+        font-size: 15px;
+        width: 300px;
+    }
+    .timeline-box:nth-child(2n) h3{
+        top: 21px;
+        width: 173px;
     }
 }
 
@@ -1704,8 +1948,52 @@ footer{
         width: 72vw;
         margin-left: 30px;
     }
-    
-
+    .timeline-box {
+        width: 45%;
+        height: 250px;
+        left: 1%;
+    }
+    .timeline-box h1 {
+        top: 60px;
+        font-size: 15px;
+        width: 117px;
+    }
+    .timeline-box h3 {
+        top: 110px;
+        width: 113px;
+        font-size: 13px;
+    }
+    .timeline-box h4 {
+        top: 160px;
+        left: 10px;
+    }
+    .timeline-box:nth-child(2n) p {
+        width: 120px;
+    }
+    .timeline-box:nth-child(2n){
+        height:350px;
+    }
+    .timeline-box:nth-child(2n) h3 {
+        top: 40px;
+        width: 100px;
+    }
+    .timeline-box:nth-child(2n) h1 {
+        width: 73px;
+    }
+    .timeline-box:nth-child(2n) h4 {
+        top: 104px;
+    }
+    .timeline-box:nth-child(2n) img {
+        width:40px;
+        height: 40px;
+    }
+    .timeline-box:nth-child(2n+1)::after {
+        right: -11.5%;
+        top: 23%;
+    }
+    .timeline-box:nth-child(2n)::after {
+        left: -10.5%;
+    }
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
  
@@ -1756,6 +2044,46 @@ footer{
     .foot-line
     {
         margin-left: 6vw;
+    }
+    .timeline-box {
+        width: 46%;
+        height: 207px;
+        left: 0%;
+    }
+    .timeline-box h1 {
+        width: 87px;
+    }
+    .timeline-box h3{
+        top: 67px;
+        width: 98px;
+    }
+    .timeline-box h4{
+        top: 110px;
+    }
+    .timeline-box:nth-child(2n) {
+        height: 251px;
+    }
+    .timeline-box:nth-child(2n) h1 {
+        font-size:14px;
+        width:120px;
+    }
+    .timeline-box:nth-child(2n) img {
+        width: 50px;
+        height: 50px;
+    }
+    .timeline-box:nth-child(2n) h4 {
+        top: 78px;
+    }
+    .timeline-box:nth-child(2n) h3 {
+        top: 32px;
+        width: 173px;
+    }
+    .timeline-box:nth-child(2n) p {
+        bottom: 10px;
+        width: 184px;
+    }
+    .timeline-traveler i{
+        font-size: 29px;
     }
   } 
 /* Small devices (portrait tablets and large phones, 600px and up) */
